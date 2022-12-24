@@ -3,7 +3,7 @@ import user from './assets/user.svg'
 
 
 const form = document.querySelector('form')
-const chatContainer = document.querySelector('#chat_container')
+const chatContainer = document.getElementById('chat_container')
 
 let loadInterval
 
@@ -28,6 +28,9 @@ function typeText(element, text) {
         if (index < text.length) {
             element.innerHTML += text.charAt(index)
             index++
+            var xH = chatContainer.scrollHeight; 
+            chatContainer.scrollTo(0, xH);
+
         } else {
             clearInterval(interval)
         }
