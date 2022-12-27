@@ -5,8 +5,8 @@ function initWidget() {
 
   // Create a variable to store the HTML for the widget
   var widgetHTML = '<div class="widget">';
-  widgetHTML += '<h2>Widget Title</h2>';
-  widgetHTML += '<p>Widget content goes here.</p>';
+  widgetHTML += '<h2> </h2>';
+  widgetHTML += '<p> </p>';
   widgetHTML += '</div>';
 
   // Append the HTML to the page
